@@ -1,0 +1,2 @@
+method,method_version,dataset,dataset_part,dataset_id,dataset_options,hyperparameters,goal,stage,train_time,detect_time,time_initializing,total_time,executed_at
+lila,0.2.0,battledim,evaluation,battledim-49ee2242292d083e7f0d7fb757486c85,{},"{'leakfree_time_start': None, 'leakfree_time_stop': None, 'resample_frequency': '5T', 'est_length': 72, 'C_threshold': 3.0, 'delta': 4.0, 'dma_specific': False, 'default_flow_sensor': 'PUMP_1'}",detection,detect,31.81647276878357,16.579991579055786,9.28879427909851,58.457162618637085,2023-05-16 16:56:48

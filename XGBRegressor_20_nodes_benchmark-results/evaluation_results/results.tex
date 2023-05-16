@@ -1,0 +1,12 @@
+\begin{table}[H]
+\centering
+\caption{Overview of the benchmark results.}
+\label{table:benchmark_results}
+\begin{tabular}{ll|rrrrrrrrrrrrrrrrrrrr}
+ & true_positives & false_positives & true_negatives & false_negatives & time_to_detection & wrong_pipe & method & method_version & dataset & dataset_part & dataset_id & dataset_derivations & hyperparameters & executed_at & precision & recall (TPR) & TNR & FPR & FNR & F1 \\
+_folder &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+lila_0.2.0_battledim-49ee2242292d083e7f0d7fb757486c85_evaluation_faf9b25e4921dc0a565b4c847d30eaaa & 8 & 2 & None & 11 & 4331400.000000 & 8 & lila & 0.2.0 & battledim & evaluation & battledim-49ee2242292d083e7f0d7fb757486c85 & \{\} & \{'leakfree\_time\_start': None, 'leakfree\_time\_stop': None, 'resample\_frequency': '5T', 'est\_length': 72, 'C\_threshold': 3.0, 'delta': 4.0, 'dma\_specific': False, 'default\_flow\_sensor': 'PUMP\_1'\} & 2023-05-16 19:33:38 & 0.800000 & 0.421053 & nan & nan & 0.578947 & 0.551724 \\
+\cline{1-21}
+\end{tabular}
+\end{table}

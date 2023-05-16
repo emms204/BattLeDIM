@@ -1,0 +1,3 @@
+[submodule "LDIMBenchmark"]
+	path = LDIMBenchmark
+	url = https://github.com/ldimbenchmark/LDIMBenchmark
