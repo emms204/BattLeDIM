@@ -1,0 +1,69 @@
+site_name: LDIMBenchmark
+repo_url: https://github.com/TUMT2022/LDIMBench.git
+theme:
+  name: material
+  icon:
+    logo: fontawesome/solid/gauge-high
+
+watch:
+ - docs/
+ - src/
+
+nav:
+- Index: index.md
+- Story: 
+  - story/index.md
+  - Testing: story/testing.ipynb
+- Design: 
+  - design/index.md
+  - Dataset: design/datasets.md
+  - File Level API: design/file-level-interface.md
+  - Programming Interface: design/programming-interface.md
+- Guides:
+  - Own Dataset: user-guides/run-on-your-dataset.ipynb
+  - user-guides/run-your-method.ipynb
+  - user-guides/run-complexity-analysis.ipynb
+  - user-guides/run-sensitivity-analysis.ipynb
+  - user-guides/docker.md
+- Roadmap: roadmap.md
+- Code Reference: reference/
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      # execute: True
+      allow_errors: false
+      kernel_name: python3
+  - gen-files:
+      scripts:
+      - docs/gen_ref_pages.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - section-index
+  - autorefs
+  - mkdocstrings
+  - git-revision-date-localized:
+      enable_creation_date: true
+      exclude:
+          - reference/*
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+extra_css:
+ - _extra/jupyter.css
+
+extra_javascript:
+ - _extra/jupyter.js
